@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Image from "next/image";
 import Logo from "@/brand/logo.jpg";
+import Image from "next/image";
 
 function App() {
   const [feedback, setFeedback] = useState("");
@@ -14,11 +14,11 @@ function App() {
   const [ref, inView] = useInView();
 
   const techWords = [
-    "Apostas Seguras",
-    "Odds Competitivas",
-    "Pagamentos Rápidos",
-    "Experiência Premium",
-    "Suporte 24/7",
+    "Soluções Inovadoras",
+    "Tecnologia Avançada",
+    "Segurança Digital",
+    "Cloud Computing",
+    "Inteligência Artificial",
   ];
   const backgroundImages = [
     "https://images.unsplash.com/photo-1639762681057-408e52192e55",
@@ -124,9 +124,9 @@ function App() {
         <nav className="relative z-20 py-6 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto flex justify-between items-center">
             <div className="flex items-center">
-              {/* Espaço para a logo - substitua pela sua imagem */}
+              {/* Logo - substitua pela sua imagem */}
               <div className="flex items-center">
-                <div className="w-12 h-12 flex items-center justify-center mr-3">
+                <div className="w-12 h-12 bg-[#02825C] rounded-full flex items-center justify-center mr-3">
                   <Image
                     src={Logo}
                     className="rounded-full"
@@ -169,7 +169,7 @@ function App() {
                     exit={{ y: -50, opacity: 0 }}
                     transition={{ duration: 0.5 }}
                   >
-                    A plataforma definitiva para {techWords[activeIndex]}
+                    Transformando negócios com {techWords[activeIndex]}
                   </motion.p>
                 </AnimatePresence>
               </div>
@@ -180,14 +180,14 @@ function App() {
                   whileTap={{ scale: 0.95 }}
                   className="bg-gradient-to-r from-[#02825C] to-[#02a575] text-white font-medium py-3 px-8 rounded-lg shadow-lg"
                 >
-                  Cadastre-se Agora
+                  Conheça Nossas Soluções
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-transparent hover:bg-white/10font-medium py-3 px-8 rounded-lg border border-[#DBA00E] text-[#DBA00E]"
+                  className="bg-transparent hover:bg-white/10  font-medium py-3 px-8 rounded-lg border border-[#DBA00E] text-[#DBA00E]"
                 >
-                  Saiba Mais
+                  Fale Conosco
                 </motion.button>
               </div>
             </motion.div>
@@ -236,7 +236,7 @@ function App() {
             }}
             transition={{ duration: 0.6 }}
           >
-            Nossos Diferenciais
+            Nossos Serviços
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -251,9 +251,9 @@ function App() {
                     <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm-1.06 13.54L7.4 12l1.41-1.41 2.12 2.12 4.24-4.24 1.41 1.41-5.64 5.66z" />
                   </svg>
                 ),
-                title: "Segurança Garantida",
+                title: "Desenvolvimento de Software",
                 description:
-                  "Tecnologia avançada para proteger seus dados e transações financeiras.",
+                  "Soluções personalizadas para otimizar seus processos de negócios.",
               },
               {
                 icon: (
@@ -265,9 +265,9 @@ function App() {
                     <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z" />
                   </svg>
                 ),
-                title: "Odds Competitivas",
+                title: "Infraestrutura em Nuvem",
                 description:
-                  "As melhores odds do mercado para maximizar seus ganhos.",
+                  "Soluções escaláveis e seguras para sua empresa na nuvem.",
               },
               {
                 icon: (
@@ -279,9 +279,9 @@ function App() {
                     <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11V11.99z" />
                   </svg>
                 ),
-                title: "Saques Rápidos",
+                title: "Segurança da Informação",
                 description:
-                  "Processamento ágil de saques para você receber seus ganhos sem demora.",
+                  "Proteção avançada contra ameaças digitais para seus dados sensíveis.",
               },
             ].map((service, index) => (
               <motion.div
@@ -394,8 +394,8 @@ function App() {
               <span className="text-2xl font-bold text-white">SEGURO BET</span>
             </div>
             <p className="text-gray-400">
-              A plataforma de apostas mais segura e confiável do mercado,
-              oferecendo as melhores odds e experiência de usuário premium.
+              Soluções tecnológicas inovadoras para impulsionar seu negócio na
+              era digital.
             </p>
           </div>
 
@@ -430,39 +430,47 @@ function App() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>Av. das Apostas, 1000 - São Paulo, SP</span>
+                <span>Av. Tecnológica, 1000 - São Paulo, SP</span>
               </li>
-              <li className="flex items-center">
-                <svg
-                  className="w-5 h-5 text-[#02825C] mr-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-                <span>(11) 98765-4321</span>
+              <li>
+                <a href="tel:+(85) 99977-7544" className="flex items-center">
+                  <svg
+                    className="w-5 h-5 text-[#02825C] mr-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+
+                  <span>(11) 98765-4321</span>
+                </a>
               </li>
-              <li className="flex items-center">
-                <svg
-                  className="w-5 h-5 text-[#02825C] mr-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <li>
+                <a
+                  href="mailto:suporte@segurobet.com"
+                  className="flex items-center"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-                <span>contato@segurobet.com</span>
+                  <svg
+                    className="w-5 h-5 text-[#02825C] mr-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span>suporte@segurobet.com</span>
+                </a>
               </li>
             </ul>
           </motion.div>
@@ -478,9 +486,6 @@ function App() {
           <p>
             &copy; {new Date().getFullYear()} Seguro Bet. Todos os direitos
             reservados.
-          </p>
-          <p className="mt-2 text-sm">
-            Jogue com responsabilidade. Apenas para maiores de 18 anos.
           </p>
         </motion.div>
       </footer>
