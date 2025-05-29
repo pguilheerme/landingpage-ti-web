@@ -430,7 +430,10 @@ function App() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>Av. Tecnológica, 1000 - São Paulo, SP</span>
+                <span>
+                  Rua Luigi Galvani, 70, Sala 92, Cidade Moncoes, 04575-020, São
+                  Paulo, São Paulo
+                </span>
               </li>
               <li>
                 <a href="tel:+(85) 99977-7544" className="flex items-center">
