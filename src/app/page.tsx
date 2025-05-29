@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Logo from "@/brand/logo.jpg";
+import Logo from "@/brand/logo-outlined.jpg";
 import Image from "next/image";
 
 function App() {
@@ -135,6 +135,7 @@ function App() {
                     alt="logo"
                   />
                 </div>
+
                 <span className="text-2xl font-bold text-white">
                   SEGURO BET
                 </span>
@@ -173,30 +174,13 @@ function App() {
                   </motion.p>
                 </AnimatePresence>
               </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-gradient-to-r from-[#02825C] to-[#02a575] text-white font-medium py-3 px-8 rounded-lg shadow-lg"
-                >
-                  Conheça Nossas Soluções
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-transparent hover:bg-white/10  font-medium py-3 px-8 rounded-lg border border-[#DBA00E] text-[#DBA00E]"
-                >
-                  Fale Conosco
-                </motion.button>
-              </div>
             </motion.div>
           </div>
         </div>
 
         {/* Scroll Indicator */}
         <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+          className="lg:block hidden absolute bottom-10 left-1/2 transform -translate-x-1/2"
           animate={{
             y: [0, 10, 0],
           }}
@@ -431,7 +415,7 @@ function App() {
                   />
                 </svg>
                 <span>
-                  Rua Luigi Galvani, 70, Sala 92, Cidade Moncoes, 04575-020, São
+                  Rua Luigi Galvani, 70, Sala 92, Cidade Monções, 04575-020, São
                   Paulo, São Paulo
                 </span>
               </li>
@@ -450,7 +434,6 @@ function App() {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-
                   <span>(11) 98765-4321</span>
                 </a>
               </li>
@@ -474,6 +457,22 @@ function App() {
                   </svg>
                   <span>suporte@segurobet.com</span>
                 </a>
+              </li>
+              <li className="flex items-start">
+                <svg
+                  className="w-5 h-5 text-[#02825C] mt-1 mr-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                <span>56.268.974/0001-05</span>
               </li>
             </ul>
           </motion.div>
